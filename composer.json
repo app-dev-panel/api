@@ -1,0 +1,71 @@
+{
+    "name": "app-dev-panel/api",
+    "type": "library",
+    "description": "ADP API — REST + SSE endpoints for debug data, live application inspection, and language-agnostic ingestion",
+    "keywords": [
+        "debug",
+        "debug-panel",
+        "debug-api",
+        "profiler",
+        "inspector",
+        "rest-api",
+        "sse",
+        "openapi",
+        "observability",
+        "monitoring",
+        "tracing",
+        "ai",
+        "llm",
+        "ai-debugging",
+        "ingestion",
+        "microservices",
+        "developer-tools",
+        "devtools",
+        "app-dev-panel",
+        "adp",
+        "application-development-panel",
+        "development-server"
+    ],
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.4",
+        "alexkart/curl-builder": "^1.0",
+        "app-dev-panel/kernel": "^1.0",
+        "app-dev-panel/mcp-server": "^1.0",
+        "gitonomy/gitlib": "^1.3",
+        "guzzlehttp/guzzle": "^7.5",
+        "guzzlehttp/psr7": "^2.4",
+        "psr/container": "^2.0",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.0|^2.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0",
+        "psr/log": "^3.0",
+        "psr/simple-cache": "^2.0|^3.0",
+        "symfony/process": "^5.4|^6.0|^7.0|^8.0",
+        "yiisoft/var-dumper": "^1.4",
+        "zircote/swagger-php": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppDevPanel\\Api\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AppDevPanel\\Api\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --no-interaction"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
